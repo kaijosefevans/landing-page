@@ -89,7 +89,7 @@ export default function Home() {
               <p>View Our Open Source Code Repository on Github</p>
             </a>
 
-            <a href='https://nextjs.org/learn' className={styles.card}>
+            <a href='https://marketplace.visualstudio.com/items?itemName=UpNext.upnext' className={styles.card}>
               <h2>VSCode Marketplace</h2>
               <p>Download Our Extension through the VSCode Marketplace</p>
             </a>
