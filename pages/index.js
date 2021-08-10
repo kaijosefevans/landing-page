@@ -581,7 +581,7 @@ export default function Home() {
             transform: scale(0.75) !important;
           }
           .githubpic {
-            clip-path: circle(32px at center) !important;
+            clip-path: circle(40%) !important;
           }
           .end-box{
             display: none;
