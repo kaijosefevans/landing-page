@@ -38,7 +38,7 @@ const Navbar = () => {
             align-items: center;
             justify-content: space-between;
             overflow: hidden;
-            background-color: #041286;
+            background-color: #005bea;
             position: fixed;
             top: 0;
             width: 100%;

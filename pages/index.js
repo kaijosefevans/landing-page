@@ -324,16 +324,7 @@ export default function Home() {
           animation: fadein 2s ease;
           width: 100%;
           height: 100%;
-          background-image: linear-gradient(
-            to top,
-            #fcc5e4 0%,
-            #fda34b 15%,
-            #ff7882 35%,
-            #c8699e 52%,
-            #7046aa 71%,
-            #0c1db8 87%,
-            #020f75 100%
-          );
+          background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
           text-align: center;
 
           display: flex;
@@ -422,13 +413,13 @@ export default function Home() {
           z-index: 10;
         }
         .end-box {
-          background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+          background-image: linear-gradient(to top, #005bea 0%, #00c6fb 100%);
           display: flex;
           align-items: center;
           justify-content: center;
           flex-direction: column;
           background-color: #555;
-          color: #444444 !important;
+          color: #fff !important;
           box-shadow: inset 0px 8px 16px -2px rgba(0, 0, 0, 0.15);
           z-index: 5;
           h4 {
@@ -447,7 +438,7 @@ export default function Home() {
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #fda34b;
+            background-color: #00c6fb;
             transform: skewY(-2deg);
             z-index: 10;
             box-shadow: inset 0px 8px 16px -2px rgba(0, 0, 0, 0.15);
@@ -547,9 +538,12 @@ export default function Home() {
             transform: scale(1.1);
           }
         }
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 700px), (max-height: 600px) {
           * {
             margin-right: 0 !important;
+          }
+          #header {
+            width: 100%;
           }
           home {
             overflowx: hidden !important;
@@ -578,9 +572,7 @@ export default function Home() {
             font-size: 24px !important;
           }
           .images {
-            width: 80% !important;
-            margin: 0% !important;
-            margin-left: 10% !important;
+            display: none;
           }
           #two .content .images {
             margin-top: 10% !important;
@@ -591,6 +583,10 @@ export default function Home() {
           .githubpic {
             clip-path: circle(32px at center) !important;
           }
+          .end-box{
+            display: none;
+          }
+
         }
       `}</style>
     </div>
