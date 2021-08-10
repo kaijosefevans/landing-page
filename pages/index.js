@@ -538,7 +538,7 @@ export default function Home() {
             transform: scale(1.1);
           }
         }
-        @media screen and (max-width: 700px), (max-height: 600px) {
+        @media screen and (max-width: 800px), (max-height: 736px) {
           * {
             margin-right: 0 !important;
           }
